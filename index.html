@@ -18,7 +18,7 @@
         </ul>
       </sidebar>
       <section>
-        *Actual content coming soon
+        <div id="Reactodo" class="container"></div>
       </section>
       <div class="social">
         <a class="linkedin" href="https://www.linkedin.com/in/drake-bennion-2b99a080/" target="_blank">
@@ -29,5 +29,11 @@
         </a>
       </div>
     </div>
+    <!-- I know it's not the best practice to use the cdn's for these, but I think for my little portfolio page, it's acceptable -->
+    <!-- Plus I don't know if I even could use webpack with github hosting - maybe is it time for a new host? -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js" charset="utf-8"></script>
+    <script src="./index.js" type="text/jsx"></script>
   </body>
 </html>
