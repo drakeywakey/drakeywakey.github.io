@@ -69,12 +69,28 @@ section {
   }
 }
 
-img {
-  margin-top: 4px;
+svg {
+  transition: fill .5s;
 }
 
 .linkedin, .github {
-  width: 100px;
+  padding: 10px;
+  transition: background .5s;
+}
+
+.linkedin:hover, .github:hover {
+  background: #555;
+  transition: background .5s;
+}
+
+.linkedin:hover svg, .github:hover svg {
+  fill: #daf8dd;
+  transition: fill .5s;
+}
+
+
+img {
+  margin-top: 4px;
 }
 
 .me {
