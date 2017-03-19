@@ -74,6 +74,7 @@ svg {
 }
 
 .linkedin, .github {
+  display: block;
   padding: 10px;
   transition: background .5s;
 }
@@ -87,7 +88,6 @@ svg {
   fill: #daf8dd;
   transition: fill .5s;
 }
-
 
 img {
   margin-top: 4px;
