@@ -9,7 +9,7 @@ var TODOS = [
 class AddNewTodo extends React.Component {
   render() {
     return (
-      <input type="text" onKeyPress={this.props.onEnter}></input>
+      <input type="text" onKeyPress={this.props.onEnter} className="addTodo" placeholder="Add a new item todo"></input>
     )
   }
 }
@@ -31,7 +31,7 @@ class TodoList extends React.Component {
     
     return (
       <div>
-        <h1>Todo:</h1>
+        <h3>Todo:</h3>
         <ul>{list}</ul>
         <AddNewTodo onEnter={this.props.onEnter}/>
       </div>
@@ -47,7 +47,7 @@ class DoneList extends React.Component {
     }.bind(this));
     return (
       <div>
-        <h1>Done:</h1>
+        <h3>Done:</h3>
         <ul>{list}</ul>
       </div>
     )

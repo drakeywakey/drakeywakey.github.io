@@ -1,3 +1,5 @@
+/* MAIN PAGE SETUP */
+
 * {
   border-radius: 5px;
   font-family: 'Roboto Mono', monospace;
@@ -114,3 +116,27 @@ li:hover {
   cursor: pointer;
   transition: background, .5s;
 }
+
+hr {
+  color: #daf8dd;
+}
+
+/*****************************************************************/
+
+/* Reactodo */
+
+#Reactodo {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  text-align: left;
+}
+
+.addTodo {
+  background: #555;
+  border: none;
+  color: #daf8dd;
+  margin-left: 50px;
+}
+
+/*****************************************************************/
