@@ -1,0 +1,107 @@
+* {
+  border-radius: 5px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+html, body {
+  background: #555;
+  color: #daf8dd;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+sidebar {
+    box-shadow: 8px 0px 5px 0px #475C7F;
+    flex: 2;
+    z-index: 2;
+  }
+
+section {
+    background: steelblue;
+    box-shadow: 5px 0px 5px 0px #444;
+    flex: 5;
+    z-index: 1;
+  }
+
+.social {
+    background: #daf8dd;
+    flex: 1;
+  }
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    text-align: center;
+  }
+
+.social {
+  height: 35%;
+}
+
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: 20vw 1fr 10vw;
+    grid-template-rows: 40vh 50vh 10vh;
+    grid-template-areas:
+      "sidebar section social"
+      "sidebar section ."
+      "sidebar section .";
+  }
+
+  sidebar {
+    grid-area: sidebar;
+  }
+
+  section {
+    grid-area: section;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  .social {
+    grid-area: social;
+    height: auto;
+  }
+}
+
+img {
+  margin-top: 4px;
+}
+
+.linkedin, .github {
+  width: 100px;
+}
+
+.me {
+  border: 3px solid #daf8dd;
+  border-radius: 50px 50px 15px 50px;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+}
+
+li {
+  border: 1px solid transparent;
+  margin: 5px;
+  padding: 5px;
+  transition: background, .3s;
+}
+
+li:focus {
+  border: 1px solid #daf8dd;
+  outline: none;
+}
+
+li:hover {
+  background: #daf8dd;
+  color: #555;
+  cursor: pointer;
+  transition: background, .5s;
+}
