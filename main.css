@@ -27,6 +27,7 @@ section {
 .social {
     background: #daf8dd;
     flex: 1;
+    height: 35%;
   }
 
 .grid {
@@ -35,10 +36,6 @@ section {
     height: 100%;
     text-align: center;
   }
-
-.social {
-  height: 35%;
-}
 
 @supports (display: grid) {
   .grid {
@@ -57,10 +54,6 @@ section {
 
   section {
     grid-area: section;
-  }
-
-  aside {
-    grid-area: aside;
   }
 
   .social {
