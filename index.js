@@ -88,6 +88,8 @@ class TodoListContainer extends React.Component {
     this.setState({
       list: newList  
     });
+
+    localStorage.setItem('todos', JSON.stringify(newList));
   }
   
   handleEnter(event) {
