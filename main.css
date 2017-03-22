@@ -149,6 +149,20 @@ h4 {
 	margin: 5px;
 }
 
+.todo .delete {
+  display: none;
+}
+
+.done .delete {
+  color: transparent;
+}
+
+.done:hover .delete {
+  color: red;
+  float: right;
+  font-weight: bold;
+}
+
 /*****************************************************************/
 
 /* Media Queries  --- lots of improvement to be made! */
