@@ -1,72 +1,69 @@
-body {
-  font-family: 'Roboto Condensed', sans-serif;
-}
-body header {
+header {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
-body header #drake {
+header #drake {
   flex: 5 1 auto;
   margin-left: 20px;
 }
-body header #drake h1 {
+header #drake h1 {
   color: tomato;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
 }
-body header #drake p {
+header #drake p {
   margin-left: 10px;
   margin-top: 3px;
 }
-body header nav {
+header nav {
   display: flex;
   flex: 1 1 auto;
   justify-content: space-around;
 }
-body header nav a {
+header nav a {
   color: #333;
   font-size: 18px;
   text-decoration: none;
 }
-body header nav a:hover {
+header nav a:hover {
   color: tomato;
   font-weight: bold;
   text-decoration: none;
 }
-body hr {
+hr {
   background-color: rgba(255, 99, 71, 0.2);
   border-color: rgba(255, 99, 71, 0.2);
   color: rgba(255, 99, 71, 0.2);
 }
-body #main {
+#main {
   margin: 0 200px;
   padding-top: 30px;
 }
-body #main #about-me {
+#main #about-me {
   text-align: center;
 }
-body #main #about-me img {
+#main #about-me img {
   float: right;
 }
-body #main #about-me p {
+#main #about-me p {
   line-height: 50px;
 }
-body #main #about-me strong {
+#main #about-me strong {
   color: tomato;
 }
-body #main footer {
+#main footer {
   background: #ff7961;
   bottom: 0;
   left: 0;
   position: fixed;
   right: 0;
 }
-body #main footer svg {
+#main footer svg {
   height: 40px;
   padding-left: 5px;
   padding-top: 7px;
 }
-body #main footer svg:hover {
+#main footer svg:hover {
   fill: white;
 }
