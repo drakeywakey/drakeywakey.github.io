@@ -11,7 +11,8 @@ import { ProjectsComponent } from './projects.component';
 import { ResumeComponent } from './resume.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'resume', component: ResumeComponent }
