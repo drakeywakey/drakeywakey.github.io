@@ -67,3 +67,10 @@ hr {
 #main footer svg:hover {
   fill: white;
 }
+
+footer p {
+  color: white;
+  float: right;
+  font-size: 14px;
+  margin-right: 10px;
+}
