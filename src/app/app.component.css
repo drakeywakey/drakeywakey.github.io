@@ -67,8 +67,12 @@ footer svg:hover {
 }
 
 footer p {
-  color: white;
   float: right;
   font-size: 14px;
   margin-right: 10px;
+}
+
+footer p a {
+  color: white;
+  text-decoration: none;
 }
