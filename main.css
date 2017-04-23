@@ -1,263 +1,72 @@
-/* MAIN PAGE SETUP */
-
-* {
-  border-radius: 5px;
-  font-family: 'Roboto Mono', monospace;
+body {
+  font-family: 'Roboto Condensed', sans-serif;
 }
-
-html, body {
-  background: #555;
-  color: #daf8dd;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-sidebar {
-    box-shadow: 8px 0px 5px 0px #475C7F;
-    flex: 2;
-    z-index: 2;
-  }
-
-section {
-    background: steelblue;
-    box-shadow: 5px 0px 5px 0px #444;
-    flex: 5;
-    z-index: 1;
-  }
-
-.social {
-    background: #daf8dd;
-    flex: 1;
-    height: 35%;
-  }
-
-.grid {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    text-align: center;
-  }
-
-@supports (display: grid) {
-  .grid {
-    display: grid;
-    grid-template-columns: 20vw 1fr 10vw;
-    grid-template-rows: 30vh 50vh 20vh;
-    grid-template-areas:
-      "sidebar section social"
-      "sidebar section ."
-      "sidebar section .";
-  }
-
-  sidebar {
-    grid-area: sidebar;
-  }
-
-  section {
-    grid-area: section;
-  }
-
-  .social {
-    grid-area: social;
-    height: auto;
-  }
-}
-
-svg {
-  fill: #555;
-  height: 3vw;
-  max-height: 75px;
-  max-width: 75px;
-  min-height: 25px;
-  min-width: 25px;
-  transition: fill .5s;
-}
-
-.linkedin, .github {
-  display: block;
-  padding: 10px;
-  transition: background .5s;
-}
-
-.linkedin:hover, .github:hover {
-  background: #555;
-  transition: background .5s;
-}
-
-.linkedin:hover svg, .github:hover svg {
-  fill: #daf8dd;
-  transition: fill .5s;
-}
-
-img {
-  margin-top: 4px;
-}
-
-.me {
-  border: 3px solid #daf8dd;
-  border-radius: 50px 50px 15px 50px;
-}
-
-ul {
-  list-style: none;
-  text-align: left;
-}
-
-li {
-  border: 1px solid transparent;
-  margin: 5px;
-  padding: 5px;
-  transition: background, .3s;
-}
-
-li:focus {
-  border: 1px solid #daf8dd;
-  outline: none;
-}
-
-li:hover {
-  background: #daf8dd;
-  color: #555;
-  cursor: pointer;
-  transition: background, .5s;
-}
-
-hr {
-  color: #daf8dd;
-}
-
-/*****************************************************************/
-
-/* Reactodo */
-
-#Reactodo {
+body header {
+  align-items: center;
   display: flex;
-  justify-content: center;
-  max-width: 1200px;
-  text-align: left;
+  justify-content: space-between;
 }
-
-.addTodo {
-  background: #555;
-  border: none;
-  color: #daf8dd;
-  margin-left: 50px;
+body header #drake {
+  flex: 5 1 auto;
+  margin-left: 20px;
 }
-
-h4 {
-	margin: 5px;
+body header #drake h1 {
+  color: tomato;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
 }
-
-.todo .delete {
-  display: none;
+body header #drake p {
+  margin-left: 10px;
+  margin-top: 3px;
 }
-
-.done .delete {
-  color: transparent;
+body header nav {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-around;
 }
-
-.done:hover .delete {
-  color: red;
-  float: right;
+body header nav a {
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+}
+body header nav a:hover {
+  color: tomato;
   font-weight: bold;
+  text-decoration: none;
 }
-
-/*****************************************************************/
-
-/* Media Queries  --- lots of improvement to be made! */
-@media (max-width: 625px) {
-  .grid {
-  	flex-direction: column;
-  }
-
-  .me {
-      display: none;
-    }
-
-    sidebar {
-    	display: flex;
-    }
-
-    ul {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 5px;
-    }
-
-    .social {
-    	height: 45%;
-    }
-
-  @supports (display: grid) {
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 70vh 15vh;
-    grid-template-areas:
-      "sidebar"
-      "section"
-      "social"
-  }
-
-  sidebar {
-    grid-area: sidebar;
-  }
-
-  section {
-    grid-area: section;
-  }
-
-  aside {
-    grid-area: aside;
-  }
-
-  .social {
-    grid-area: social;
-    height: auto;
-  }
+body hr {
+  background-color: rgba(255, 99, 71, 0.2);
+  border-color: rgba(255, 99, 71, 0.2);
+  color: rgba(255, 99, 71, 0.2);
 }
-
-  @media (max-width: 330px) {
-  @supports (display: grid) {
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 25vh 70vh 5vh;
-    grid-template-areas:
-      "sidebar"
-      "section"
-      "social"
-  }
-
-  sidebar {
-    display: flex;
-    grid-area: sidebar;
-  }
-
-    .me {
-      display: none;
-    }
-
-    ul {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 5px;
-    }
-
-  section {
-    grid-area: section;
-  }
-
-  aside {
-    grid-area: aside;
-  }
-
-  .social {
-    grid-area: social;
-    height: auto;
-  }
+body #main {
+  margin: 0 200px;
+  padding-top: 30px;
 }
-/*****************************************************************/
+body #main #about-me {
+  text-align: center;
+}
+body #main #about-me img {
+  float: right;
+}
+body #main #about-me p {
+  line-height: 50px;
+}
+body #main #about-me strong {
+  color: tomato;
+}
+body #main footer {
+  background: #ff7961;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+body #main footer svg {
+  height: 40px;
+  padding-left: 5px;
+  padding-top: 7px;
+}
+body #main footer svg:hover {
+  fill: white;
+}
