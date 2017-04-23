@@ -1,0 +1,15 @@
+#about-me {
+  text-align: center;
+}
+
+img {
+  float: right;
+}
+
+p {
+  line-height: 50px;
+}
+
+strong {
+  color: tomato;
+}
