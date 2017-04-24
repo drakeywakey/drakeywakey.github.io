@@ -15,3 +15,17 @@ img {
 h3 {
     color: #fff;
 }
+
+#Reactodo {
+    background: white;
+}
+
+#Reactodo h3 {
+    color: tomato;
+}
+
+#Reactodo img {
+    float: right;
+    margin-left: 5px;
+    margin-right: 0;
+}
