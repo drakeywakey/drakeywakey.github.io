@@ -1,0 +1,29 @@
+svg {
+    height: 35px;
+}
+
+#contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    color: tomato;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+aside a {
+    color: tomato;
+}
+
+#contact-info {
+    color: #333;
+    text-align: center;
+}
+
+h6 {
+    margin: 0;
+}
