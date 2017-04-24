@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+}
+aside, img {
+    color: #333;
+    background: #ff7961;
+    height: 150px;
+}
+
+img {
+    float: left;
+    margin-right: 25px;
+}
+
+h3 {
+    color: #fff;
+}
