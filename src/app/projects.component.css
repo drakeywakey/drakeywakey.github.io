@@ -3,7 +3,7 @@ a {
 }
 aside, img {
     color: #333;
-    background: #ff7961;
+    background: steelblue;
     height: 150px;
 }
 
@@ -21,7 +21,7 @@ h3 {
 }
 
 #Reactodo h3 {
-    color: tomato;
+    color: steelblue;
 }
 
 #Reactodo img {

@@ -4,6 +4,7 @@
 
 img {
   float: right;
+  width: 200px;
 }
 
 p {
@@ -11,5 +12,5 @@ p {
 }
 
 strong {
-  color: tomato;
+  color: steelblue;
 }

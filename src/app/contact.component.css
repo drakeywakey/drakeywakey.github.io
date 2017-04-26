@@ -9,14 +9,14 @@ svg {
 }
 
 aside {
-    color: tomato;
+    color: steelblue;
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
 
 aside a {
-    color: tomato;
+    color: steelblue;
 }
 
 #contact-info {
