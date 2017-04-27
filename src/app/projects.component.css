@@ -1,31 +1,41 @@
 a {
     text-decoration: none;
 }
+
 aside, img {
     color: #333;
-    background: steelblue;
     height: 150px;
+    margin-bottom: 20px;
 }
 
 img {
+    width: 300px;
+}
+
+a:nth-child(odd) aside {
+    background: white;
+    border: 1px solid steelblue;
+}
+
+a:nth-child(even) aside {
+    background: steelblue;
+}
+
+a:nth-child(odd) img {
+    float: right;
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+a:nth-child(even) img {
     float: left;
     margin-right: 25px;
 }
 
-h3 {
-    color: #fff;
-}
-
-#Reactodo {
-    background: white;
-}
-
-#Reactodo h3 {
+a:nth-child(odd) h3 {
     color: steelblue;
 }
 
-#Reactodo img {
-    float: right;
-    margin-left: 5px;
-    margin-right: 0;
+a:nth-child(even) h3 {
+    color: white;
 }
