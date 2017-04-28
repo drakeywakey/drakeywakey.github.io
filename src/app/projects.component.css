@@ -4,12 +4,12 @@ a {
 
 aside, img {
     color: #333;
-    height: 150px;
+    height: 250px;
     margin-bottom: 20px;
 }
 
 img {
-    width: 300px;
+    width: 450px;
 }
 
 a:nth-child(odd) aside {
@@ -38,4 +38,8 @@ a:nth-child(odd) h3 {
 
 a:nth-child(even) h3 {
     color: white;
+}
+
+#Reactodo img {
+    width: 700px;
 }
